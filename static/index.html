@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>fish照片墙</title>
+		<link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Roboto:400,300,700" rel="stylesheet" type="text/css" >
+		<style>
+			*{
+				margin:0px;
+				padding:0px;
+				border:0px;
+			}
+			.container{
+				padding-top:100px;
+				width:970px;
+				margin:0 auto;
+				padding-bottom: 100px;
+				overflow:hidden;
+			}
+			.left{
+				float:left;
+				width:48%;
+			}
+			.right{
+				float:left;
+				width:48%;
+				margin-left:10px;
+			}
+			.author{
+				margin-top:150px;
+				font-family:"Playfair Display", times, serif;
+				font-size:40px;
+				margin-bottom:150px;
+			}
+			.category{
+				position:relative;
+				margin-top:10px;
+				width:100%;
+				overflow:hidden;
+			}
+			.category:hover img{
+				transform:scale(1);
+			}
+
+			.category img{
+				max-width:100%;
+				transform:scale(1.2);
+				transition:0.9s;
+			}
+
+			.category:hover .wrap{
+				background:none;
+			}
+
+			.category .wrap{
+				position:absolute;
+				left:0px;
+				right:0px;
+				top:0px;
+				bottom:0px;
+				background:rgba(0, 0, 0, 0.5);
+				transition:0.9s;
+			}
+
+			.category .text{
+				position:absolute;
+				left:0px;
+				right:0px;
+				top:50%;
+				width:100%;
+				vertical-align:middle;
+				text-align:center;
+			}
+
+			.category h2{
+				color:white;
+				font-weight:300;
+				font-size:30px;
+				margin-top:-15px;
+				font-family:"Roboto", arial, sans-serif;
+			}
+
+			.footer{
+				margin-top:150px;
+				font-family:"Roboto", arial, sans-serif;
+				font-size:20px;
+				color:#676767;
+				text-align:center;
+			}
+
+			@-webkit-keyframes fadeIn {
+			  from {
+			    opacity: 0;
+			  }
+
+			  to {
+			    opacity: 1;
+			  }
+			}
+
+			@keyframes fadeIn {
+			  from {
+			    opacity: 0;
+			  }
+
+			  to {
+			    opacity: 1;
+			  }
+			}
+
+			.fadeIn {
+			  -webkit-animation-name: fadeIn;
+			  animation-name: fadeIn;
+			}
+
+			.animated {
+			  -webkit-animation-duration: 1s;
+			  animation-duration: 1s;
+			  -webkit-animation-fill-mode: both;
+			  animation-fill-mode: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="left">
+				<div class="author">我是fish & 我喜欢摄影</div>
+				<div class="category fadeIn animated"><img src="img/nature.jpg"/><div class="wrap"><div class="text"><h2>自然</h2></div></div></div>
+				<div class="category fadeIn animated"><img src="img/food.jpg"/><div class="wrap"><div class="text"><h2>美食</h2></div></div></div>
+				<div class="category fadeIn animated"><img src="img/faces.jpg"/><div class="wrap"><div class="text"><h2>人物</h2></div></div></div>
+			</div>
+			<div class="right">
+				<div class="category fadeIn animated"><img src="img/travel.jpg"/><div class="wrap"><div class="text"><h2>旅游</h2></div></div></div>
+				<div class="category fadeIn animated"><img src="img/wildlife.jpg"/><div class="wrap"><div class="text"><h2>动物</h2></div></div></div>
+				<div class="category fadeIn animated"><img src="img/city.jpg"/><div class="wrap"><div class="text"><h2>城市</h2></div></div></div>
+				<div class="footer">© 2019 fish. All Rights Reserved. <br/>备案号 粤ICP备18009767号</div>
+			</div>
+		</div>
+	</body>
+</html>
