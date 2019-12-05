@@ -125,16 +125,21 @@
 		<div class="container">
 			<div class="left">
 				<div class="author">我是fish & 我喜欢摄影</div>
-				<div class="category fadeIn animated"><img src="img/nature.jpg"/><div class="wrap"><div class="text"><h2>自然</h2></div></div></div>
-				<div class="category fadeIn animated"><img src="img/food.jpg"/><div class="wrap"><div class="text"><h2>美食</h2></div></div></div>
-				<div class="category fadeIn animated"><img src="img/faces.jpg"/><div class="wrap"><div class="text"><h2>人物</h2></div></div></div>
+				<div class="category fadeIn animated" onclick="go('nature')"><img src="img/nature.jpg"/><div class="wrap"><div class="text"><h2>自然</h2></div></div></div>
+				<div class="category fadeIn animated" onclick="go('food')"><img src="img/food.jpg"/><div class="wrap"><div class="text"><h2>美食</h2></div></div></div>
+				<div class="category fadeIn animated" onclick="go('face')"><img src="img/faces.jpg"/><div class="wrap"><div class="text"><h2>人物</h2></div></div></div>
 			</div>
 			<div class="right">
-				<div class="category fadeIn animated"><img src="img/travel.jpg"/><div class="wrap"><div class="text"><h2>旅游</h2></div></div></div>
-				<div class="category fadeIn animated"><img src="img/wildlife.jpg"/><div class="wrap"><div class="text"><h2>动物</h2></div></div></div>
-				<div class="category fadeIn animated"><img src="img/city.jpg"/><div class="wrap"><div class="text"><h2>城市</h2></div></div></div>
+				<div class="category fadeIn animated" onclick="go('travel')"><img src="img/travel.jpg"/><div class="wrap"><div class="text"><h2>旅游</h2></div></div></div>
+				<div class="category fadeIn animated" onclick="go('wildlife')"><img src="img/wildlife.jpg"/><div class="wrap"><div class="text"><h2>动物</h2></div></div></div>
+				<div class="category fadeIn animated" onclick="go('city')"><img src="img/city.jpg"/><div class="wrap"><div class="text"><h2>城市</h2></div></div></div>
 				<div class="footer">© 2019 fish. All Rights Reserved. <br/>备案号 粤ICP备18009767号</div>
 			</div>
+			<script>
+				function go(src){
+					location.href = "/"+src+".html"
+				}
+			</script>
 		</div>
 	</body>
 </html>
