@@ -16,7 +16,7 @@ server {
 	ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 	ssl_prefer_server_ciphers on;
 
-	server_name fishedee.com;
+	server_name fishedee.com  www.fishedee.com;
 
 	location / {
 		proxy_http_version 1.1;
